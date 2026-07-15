@@ -10,6 +10,8 @@
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
+        if(head==null || head.next==null)
+            return head;
 
         Stack<Integer> st=new Stack<>();
         ListNode temp=head;
