@@ -17,11 +17,11 @@ class Solution {
                 freq[s.charAt(l)-'A']--;
                 l++;
 
-                maxfreq=0;
+                /*maxfreq=0;
                 for(int i=0;i<26;i++)
                 {
                     maxfreq=Math.max(maxfreq,freq[i]);
-                }
+                }*/
             }
 
             maxlen=Math.max(maxlen,r-l+1);
