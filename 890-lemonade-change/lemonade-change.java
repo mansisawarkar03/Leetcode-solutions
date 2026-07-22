@@ -1,8 +1,7 @@
 class Solution {
     public boolean lemonadeChange(int[] bills) {
 
-        if(bills[0]==10 || bills[0]==20)
-            return false;
+        
 
         int five=0;
         int ten=0;
