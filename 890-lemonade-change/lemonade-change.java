@@ -33,7 +33,7 @@ class Solution {
                 }
                 else if(five>=3)
                 {
-                    five=five-3;                
+                    five-=3;                
                 }
                 else
                     return false;
