@@ -31,12 +31,10 @@ class Solution {
             {
                 if(st.isEmpty())
                     break;
-                else
-                {
-                    node=st.pop();
-                    arr.add(node.val);
-                    node=node.right;
-                }
+                node=st.pop();
+                arr.add(node.val);
+                node=node.right;
+                
             }
         }
         return arr;
