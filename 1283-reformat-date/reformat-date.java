@@ -16,19 +16,22 @@ class Solution {
         map.put("Dec","12");
 
         String[] parts=date.split(" ");
-        String parts1="";
-        if(parts[0].length()==3)
+        
+        
+        StringBuilder sb=new StringBuilder();
+        sb.append(parts[2]);
+        sb.append("-");
+        sb.append(map.get(parts[1]));
+        sb.append("-");
+
+        String day=parts[0].substring(0,parts[0].length()-2);
+        if(day.length()==1)
         {
-            parts1="0"+parts[0].substring(0,parts[0].length()-2);
-        }
-        else
-        {
-            parts1=parts[0].substring(0,parts[0].length()-2);
+            day="0"+day;
         }
 
-        String ans=parts[2]+"-"+ map.get(parts[1]) + "-" +parts1;
-
-        return ans;
+        sb.append(day);
+        return sb.toString();
         
     }
 }
