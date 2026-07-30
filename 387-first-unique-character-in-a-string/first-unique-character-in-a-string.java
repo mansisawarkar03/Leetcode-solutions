@@ -1,21 +1,19 @@
 class Solution {
     public int firstUniqChar(String s) {
 
-        
+        HashMap<Character,Integer> map=new HashMap<>();
+        char ch=' ';
         for(int i=0;i<s.length();i++)
         {
-            char ch=s.charAt(i);
-            int flag=0;
-            for(int j=0;j<s.length();j++)
+            map.put(s.charAt(i),map.getOrDefault(s.charAt(i),0)+1);
+        }
+
+        for(int i=0;i<s.length();i++)
+        {
+            if(map.get(s.charAt(i))==1)
             {
-                if(i!=j && ch==s.charAt(j))
-                {
-                    flag=1;
-                    break;
-                }
-            }
-            if(flag==0)
                 return i;
+            }
         }
         return -1;
         
