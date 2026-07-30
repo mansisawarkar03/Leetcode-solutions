@@ -7,21 +7,13 @@ class Solution {
             char ch=moves.charAt(i);
             switch(ch)
             {
-                case 'U':
-                    ud++;
-                    break;
+                case 'U': ud++; break;
                 
-                case 'D':
-                    ud--;
-                    break;
+                case 'D': ud--; break;
 
-                case 'R':
-                    lr++;
-                    break;
+                case 'R': lr++; break;
                 
-                case 'L':
-                    lr--;
-                    break;
+                case 'L': lr--; break;
             }
         }
         if(lr==0 && ud==0)
