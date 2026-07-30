@@ -2,9 +2,8 @@ class Solution {
     public boolean judgeCircle(String moves) {
         int ud=0;
         int lr=0;
-        for(int i=0;i<moves.length();i++)
+        for(char ch: moves.toCharArray())
         {
-            char ch=moves.charAt(i);
             switch(ch)
             {
                 case 'U': ud++; break;
