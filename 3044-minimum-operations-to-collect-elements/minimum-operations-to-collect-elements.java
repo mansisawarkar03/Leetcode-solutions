@@ -13,6 +13,7 @@ class Solution {
         {
             if(list.isEmpty())
                 return ans;
+                
             if(list.contains(nums.get(i)))
             {
                 list.remove(nums.get(i));
