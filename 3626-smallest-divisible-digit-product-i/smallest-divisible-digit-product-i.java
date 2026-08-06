@@ -4,7 +4,7 @@ class Solution {
         
         while(true)
         {
-            long p=1;
+            int p=1;
             int temp=n;
 
             while(temp>0)
