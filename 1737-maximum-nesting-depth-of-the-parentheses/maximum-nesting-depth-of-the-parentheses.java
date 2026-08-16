@@ -7,9 +7,10 @@ class Solution {
             if(s.charAt(i)=='(')
             {
                 c++;
+                ans=Math.max(c,ans);
+                
             }
-            ans=Math.max(c,ans);
-            if(s.charAt(i)==')')
+            else if(s.charAt(i)==')')
             {
                 c--;
             }
