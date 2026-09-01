@@ -25,9 +25,9 @@ class Solution {
             map.put(nums[i],map.getOrDefault(nums[i],0)+1);
         }
 
-        for(Map.Entry<Integer,Integer> entry: map.entrySet())
+        for(int j: nums)
         {
-            if(entry.getValue()>2)
+            if(map.get(j)>2)
             {
                 return false;
             }
