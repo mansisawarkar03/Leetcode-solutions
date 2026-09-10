@@ -7,7 +7,5 @@ class Solution {
         }
         
         return i;
-        
-        
     }
 }
