@@ -8,22 +8,16 @@ class Solution {
         Arrays.sort(people);
         while(l<=r)
         {
-            if(l==r)
-            {
-                ans++;
-                break;
-            }
+            
             if(people[l]+people[r]<=limit)
             {
-                ans++;
+                
                 l++;
-                r--;
+                
             }
-            else
-            {
-                ans++;
-                r--;
-            }
+            ans++;
+            r--;
+            
         }
         return ans;
         
