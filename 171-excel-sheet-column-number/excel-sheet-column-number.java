@@ -5,8 +5,8 @@ class Solution {
         int ans=0;
         for(int i=0;i<n;i++)
         {
-            int v=(columnTitle.charAt(i)-'A')+1;
-            ans=ans*26+v;
+            
+            ans=ans*26+ (columnTitle.charAt(i)-'A')+1;
         }
         return ans;
         
