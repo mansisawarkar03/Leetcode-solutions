@@ -9,7 +9,7 @@ class Solution {
             else if(Character.isLetter(ch)) c++;
         }
 
-        if(c>0) return (int)Math.floor(v/c);
+        if(c>0) return (v/c);
 
         return 0;
         
